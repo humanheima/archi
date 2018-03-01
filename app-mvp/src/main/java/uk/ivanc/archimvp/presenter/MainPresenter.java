@@ -30,7 +30,7 @@ public class MainPresenter implements Presenter<MainMvpView> {
     @Override
     public void detachView() {
         this.mainMvpView = null;
-        if (subscription != null) subscription.unsubscribe();
+        if (subscription != null && !subscription.isUnsubscribed()) subscription.unsubscribe();
     }
 
     public void loadRepositories(String usernameEntered) {

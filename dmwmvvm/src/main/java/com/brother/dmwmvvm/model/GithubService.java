@@ -1,4 +1,4 @@
-package uk.ivanc.archimvvm.model;
+package com.brother.dmwmvvm.model;
 
 import java.util.List;
 
@@ -10,10 +10,13 @@ import retrofit2.http.Path;
 import retrofit2.http.Url;
 import rx.Observable;
 
+/**
+ * Created by dumingwei on 2017/11/4.
+ */
 public interface GithubService {
 
     @GET("users/{username}/repos")
-    Observable<List<Repository>> publicRepositories(@Path("username") String username);
+    Observable<List<Repository>> publicREpositories(@Path("username") String userName);
 
     @GET
     Observable<User> userFromUrl(@Url String userUrl);
@@ -28,4 +31,6 @@ public interface GithubService {
             return retrofit.create(GithubService.class);
         }
     }
+
+
 }

@@ -5,11 +5,14 @@ android {
     buildToolsVersion rootProject.ext.androidBuildToolsVersion
 
     defaultConfig {
-        applicationId "uk.ivanc.archimvvm"
+        applicationId "com.brother.dmwmvvm"
         minSdkVersion rootProject.ext.androidMinSdkVersion
         targetSdkVersion rootProject.ext.androidTargetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     dataBinding {
@@ -22,12 +25,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '26.0.2'
+
 }
 
 dependencies {
     Map<String, String> dependencies = rootProject.ext.dependencies;
 
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile dependencies.appCompat
     compile dependencies.cardView
     compile dependencies.recyclerView
@@ -41,4 +45,5 @@ dependencies {
     testCompile dependencies.jUnit
     testCompile dependencies.mockito
     testCompile dependencies.robolectric
+
 }
