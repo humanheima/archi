@@ -23,28 +23,28 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     /*约束布局*/
     /*butterknife*/
     Map<String, String> dependencies = rootProject.ext.dependencies;
 
-    compile dependencies.appCompat
-    compile dependencies.cardView
-    compile dependencies.recyclerView
-    compile dependencies.retrofit
-    compile dependencies.retrofitConverterGson
-    compile dependencies.retrofitAdapterRxJava
-    compile dependencies.picasso
-    compile dependencies.rxAndroid
-    compile dependencies.circleImageView
+    implementation dependencies.appCompat
+    implementation dependencies.cardView
+    implementation dependencies.recyclerView
+    implementation dependencies.retrofit
+    implementation dependencies.retrofitConverterGson
+    implementation dependencies.retrofitAdapterRxJava
+    implementation dependencies.picasso
+    implementation dependencies.rxAndroid
+    implementation dependencies.circleImageView
 
-    testCompile dependencies.jUnit
-    testCompile dependencies.mockito
-    testCompile dependencies.robolectric
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.jakewharton:butterknife:8.8.1'
+    testImplementation dependencies.jUnit
+    testImplementation dependencies.mockito
+    testImplementation dependencies.robolectric
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
