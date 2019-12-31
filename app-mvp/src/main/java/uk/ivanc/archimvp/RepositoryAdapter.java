@@ -81,11 +81,11 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
         public RepositoryViewHolder(View itemView) {
             super(itemView);
             contentLayout = itemView.findViewById(R.id.layout_content);
-            titleTextView = (TextView) itemView.findViewById(R.id.text_repo_title);
-            descriptionTextView = (TextView) itemView.findViewById(R.id.text_repo_description);
-            watchersTextView = (TextView) itemView.findViewById(R.id.text_watchers);
-            starsTextView = (TextView) itemView.findViewById(R.id.text_stars);
-            forksTextView = (TextView) itemView.findViewById(R.id.text_forks);
+            titleTextView = itemView.findViewById(R.id.text_repo_title);
+            descriptionTextView = itemView.findViewById(R.id.text_repo_description);
+            watchersTextView = itemView.findViewById(R.id.text_watchers);
+            starsTextView = itemView.findViewById(R.id.text_stars);
+            forksTextView = itemView.findViewById(R.id.text_forks);
         }
     }
 

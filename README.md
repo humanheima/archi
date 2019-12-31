@@ -4,7 +4,7 @@ This repository showcases and compares different architectural patterns that can
 * __MVP__: Model View Presenter.
 * __MVVM__: Model View ViewModel with data binding. 
 
-[美团点评团队-如何构建Android MVVM 应用框架](https://tech.meituan.com/android_mvvm.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+[美团点评团队-如何构建Android MVVM 应用框架](https://zhuanlan.zhihu.com/p/23772285)
 
 ## The App
 

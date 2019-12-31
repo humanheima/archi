@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    Map<String, String> dependencies = rootProject.ext.dependencies;
+    Map<String, String> dependencies = rootProject.ext.dependencies
 
     implementation dependencies.appCompat
     implementation dependencies.cardView
